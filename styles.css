@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+
+  /* Color */
+  --white: #fff;
+  --paleBlue: hsl(225, 100%, 94%);
+  --brightBlue: hsl(245, 75%, 52%);
+  --midPaleBlue: hsl(222, 52%, 87%);
+  --veryPaleBlue: hsl(225, 100%, 98%);
+  --desaturatedBlue: hsl(224, 23%, 55%);
+  --darkBlue: hsl(223, 47%, 23%);
+}
+
+body {
+  background: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: var(--paleBlue);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.order-summary-card {
+  max-width: 400px;
+  max-height: 650px;
+  background-color: var(--white);
+  overflow: hidden;
+  border-radius: 15px;
+  margin: 10px;
+  box-shadow: 0 20px 20px 0 var(--midPaleBlue);
+}
+
+.order-summary-card img {
+  width: 100%;
+}
+
+.order-summary-contents {
+  padding: 2em;
+  text-align: center;
+}
+
+.order-summary-contents h2 {
+  color: var(--darkBlue);
+  margin-bottom: 1em;
+  font-weight: 900;
+}
+
+.order-summary-contents p {
+  color: var(--desaturatedBlue);
+  line-height: 26px;
+}
+
+.annual-plan,
+.annual-details {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.annual-plan {
+  background-color: var(--veryPaleBlue);
+  justify-content: space-between;
+  margin-block: 1.5em;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.annual-details {
+  gap: 15px;
+}
+
+.annual-details img {
+  background-color: var(--paleBlue);
+  border-radius: 50%;
+}
+
+.annual-details h4 {
+  color: var(--darkBlue);
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.proceed-btn {
+  background-color: var(--brightBlue);
+  padding: 1em;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  color: var(--veryPaleBlue);
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 2em;
+  box-shadow: 0 20px 20px 0 var(--midPaleBlue);
+}
+
+.change-btn a {
+  color: var(--brightBlue);
+  font-weight: 700;
+  font-size: small;
+}
+
+.cancel-btn a {
+  text-decoration: none;
+  color: var(--desaturatedBlue);
+  font-weight: 900;
+}
+
+.proceed-btn:hover,
+.change-btn a:hover {
+  opacity: 0.6;
+}
+
+.change-btn a:hover {
+  text-decoration: none;
+}
+
+.cancel-btn a:hover {
+  color: var(--darkBlue);
+}
