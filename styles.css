@@ -19,7 +19,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   background-color: var(--paleBlue);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
