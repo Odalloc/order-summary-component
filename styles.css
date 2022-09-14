@@ -45,9 +45,9 @@ body {
   text-align: center;
 }
 
-.order-summary-contents h2 {
+.order-summary-contents h1 {
   color: var(--darkBlue);
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   font-weight: 900;
 }
 
@@ -80,10 +80,11 @@ body {
   border-radius: 50%;
 }
 
-.annual-details h4 {
+.annual-details h2 {
   color: var(--darkBlue);
   font-weight: 900;
   white-space: nowrap;
+  font-size: small;
 }
 
 .proceed-btn {
