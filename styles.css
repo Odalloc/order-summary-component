@@ -87,6 +87,10 @@ body {
   font-size: small;
 }
 
+.annual-details p {
+  font-size: smaller;
+}
+
 .proceed-btn {
   background-color: var(--brightBlue);
   padding: 1em;
